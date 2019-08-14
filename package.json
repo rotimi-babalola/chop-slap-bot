@@ -6,6 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rotimi-babalola/chop-slap-bot.git"
@@ -18,5 +29,12 @@
   "bugs": {
     "url": "https://github.com/rotimi-babalola/chop-slap-bot/issues"
   },
-  "homepage": "https://github.com/rotimi-babalola/chop-slap-bot#readme"
+  "homepage": "https://github.com/rotimi-babalola/chop-slap-bot#readme",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "^3.0.3",
+    "lint-staged": "^9.2.1"
+  }
 }
