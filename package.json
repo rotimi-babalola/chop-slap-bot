@@ -1,0 +1,22 @@
+{
+  "name": "chop-slap-bot",
+  "version": "1.0.0",
+  "description": "A slack bot that send people slaps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rotimi-babalola/chop-slap-bot.git"
+  },
+  "keywords": [
+    "slap"
+  ],
+  "author": "Rotimi Babalola",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rotimi-babalola/chop-slap-bot/issues"
+  },
+  "homepage": "https://github.com/rotimi-babalola/chop-slap-bot#readme"
+}
