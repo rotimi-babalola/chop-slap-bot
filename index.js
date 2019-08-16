@@ -5,7 +5,7 @@ const Slack = require('slack');
 dotenv.config();
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const token = process.env.SLACK_TOKEN;
 const botToken = process.env.BOT_TOKEN;
 
