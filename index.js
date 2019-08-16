@@ -14,6 +14,12 @@ const bot = new Slack({ token });
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Welcome to chop-slap!!!',
+  });
+});
+
 app.post('/chop-slap', (req, res) => {
   const { text } = req.body;
   bot.chat.postMessage({
