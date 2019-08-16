@@ -1,18 +1,18 @@
-const Express = require('express');
+const express = require('express');
 const dotenv = require('dotenv');
 const Slack = require('slack');
 
 dotenv.config();
 
-const app = new Express();
+const app = express();
 const PORT = 5000;
 const token = process.env.SLACK_TOKEN;
 const botToken = process.env.BOT_TOKEN;
 
 const bot = new Slack({ token });
 
-app.use(Express.json());
-app.use(Express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.post('/chop-slap', (req, res) => {
   const { text } = req.body;
